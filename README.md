@@ -142,3 +142,60 @@ Happens when Git cannot automatically decide which changes to keep. You resolve 
 I practiced most of these commands by creating branches, making changes, resolving merge conflicts, using reset/revert, experimenting with detached HEAD, and recovering commits using reflog.
 
 Example of real reflog history from this repository:
+0b62c09 | HEAD@{Sun Sep 20 12:21:06 2026} | Sun Sep 20 12:14:28 2026 | reset: moving to 0b62c09
+b966ae6 | HEAD@{Sun Sep 20 12:15:43 2026} | Sat Sep 19 16:39:48 2026 | reset: moving to HEAD~1
+0b62c09 | HEAD@{Sun Sep 20 12:14:28 2026} | Sun Sep 20 12:14:28 2026 | commit: Reflog time machine experiment
+b966ae6 | HEAD@{Sat Sep 19 17:32:36 2026} | Sat Sep 19 16:39:48 2026 | reset: moving to b966ae623b87415c168e262568823c35e7e24ee7
+b966ae6 | HEAD@{Sat Sep 19 17:14:40 2026} | Sat Sep 19 16:39:48 2026 | checkout: moving from main to cherry-pick-practice
+b966ae6 | HEAD@{Sat Sep 19 16:43:26 2026} | Sat Sep 19 16:39:48 2026 | checkout: moving from navbar-update to main
+b966ae6 | HEAD@{Sat Sep 19 16:42:46 2026} | Sat Sep 19 16:39:48 2026 | rebase (finish): returning to refs/heads/navbar-update
+b966ae6 | HEAD@{Sat Sep 19 16:42:46 2026} | Sat Sep 19 16:39:48 2026 | rebase (start): checkout main
+e570d2b | HEAD@{Sat Sep 19 16:40:33 2026} | Thu Sep 3 21:41:33 2026 | checkout: moving from main to navbar-update
+b966ae6 | HEAD@{Sat Sep 19 16:39:48 2026} | Sat Sep 19 16:39:48 2026 | commit: This contain the content of stash mission
+2083a1c | HEAD@{Mon Sep 14 17:41:59 2026} | Sat Sep 12 16:45:52 2026 | reset: moving to HEAD
+2083a1c | HEAD@{Sun Sep 13 23:13:33 2026} | Sat Sep 12 16:45:52 2026 | reset: moving to HEAD
+2083a1c | HEAD@{Sun Sep 13 22:45:28 2026} | Sat Sep 12 16:45:52 2026 | checkout: moving from navbar-update to main
+e570d2b | HEAD@{Sun Sep 13 21:01:51 2026} | Thu Sep 3 21:41:33 2026 | checkout: moving from main to navbar-update
+2083a1c | HEAD@{Sun Sep 13 20:59:40 2026} | Sat Sep 12 16:45:52 2026 | checkout: moving from navbar-update to main
+e570d2b | HEAD@{Sun Sep 13 20:58:15 2026} | Thu Sep 3 21:41:33 2026 | checkout: moving from main to navbar-update
+2083a1c | HEAD@{Sun Sep 13 20:44:15 2026} | Sat Sep 12 16:45:52 2026 | reset: moving to HEAD
+2083a1c | HEAD@{Sat Sep 12 16:45:52 2026} | Sat Sep 12 16:45:52 2026 | revert: Reapply "Testing revert"
+8d17af3 | HEAD@{Sat Sep 12 16:33:59 2026} | Sat Sep 12 16:33:59 2026 | revert: Revert "Testing revert"
+88fc71a | HEAD@{Sat Sep 12 16:25:21 2026} | Sat Sep 12 16:25:21 2026 | commit: Testing revert
+a55bce2 | HEAD@{Sat Sep 12 16:12:20 2026} | Wed Sep 9 22:59:25 2026 | reset: moving to ORIG_HEAD
+9349b2a | HEAD@{Sat Sep 12 15:47:16 2026} | Sun Sep 6 20:08:03 2026 | reset: moving to HEAD~1
+a55bce2 | HEAD@{Sat Sep 12 15:46:19 2026} | Wed Sep 9 22:59:25 2026 | reset: moving to ORIG_HEAD
+9349b2a | HEAD@{Sat Sep 12 15:36:48 2026} | Sun Sep 6 20:08:03 2026 | reset: moving to HEAD~1
+a55bce2 | HEAD@{Sat Sep 12 15:33:14 2026} | Wed Sep 9 22:59:25 2026 | reset: moving to ORIG_HEAD
+9349b2a | HEAD@{Wed Sep 9 23:06:49 2026} | Sun Sep 6 20:08:03 2026 | reset: moving to HEAD~1
+a55bce2 | HEAD@{Wed Sep 9 23:00:26 2026} | Wed Sep 9 22:59:25 2026 | reset: moving to HEAD
+a55bce2 | HEAD@{Wed Sep 9 22:59:25 2026} | Wed Sep 9 22:59:25 2026 | commit: to learn rest --soft command
+9349b2a | HEAD@{Sun Sep 6 20:15:37 2026} | Sun Sep 6 20:08:03 2026 | checkout: moving from 1373efa60fb67cf3ec56f6e1a4b8d041ccc8c947 to main
+1373efa | HEAD@{Sun Sep 6 20:14:26 2026} | Sun Sep 6 20:14:26 2026 | commit: Detached Head experimer
+1fbcb17 | HEAD@{Sun Sep 6 20:09:44 2026} | Sun Aug 30 16:12:27 2026 | checkout: moving from main to 1fbcb17
+9349b2a | HEAD@{Sun Sep 6 20:08:03 2026} | Sun Sep 6 20:08:03 2026 | commit: changing h2 to h3
+30c9478 | HEAD@{Sat Sep 5 18:27:38 2026} | Thu Sep 3 21:50:04 2026 | checkout: moving from main to main
+30c9478 | HEAD@{Thu Sep 3 21:50:04 2026} | Thu Sep 3 21:50:04 2026 | commit (merge): Resolved merge conflict between main and navbar branches
+25c6658 | HEAD@{Thu Sep 3 21:42:03 2026} | Mon Aug 31 20:27:50 2026 | checkout: moving from navbar-update to main
+e570d2b | HEAD@{Thu Sep 3 21:41:33 2026} | Thu Sep 3 21:41:33 2026 | commit: successfully removed h1 from navbar branch
+9cc8bd5 | HEAD@{Thu Sep 3 21:30:04 2026} | Thu Sep 3 21:26:26 2026 | checkout: moving from main to navbar-update
+25c6658 | HEAD@{Thu Sep 3 21:29:13 2026} | Mon Aug 31 20:27:50 2026 | reset: moving to HEAD
+25c6658 | HEAD@{Thu Sep 3 21:27:42 2026} | Mon Aug 31 20:27:50 2026 | checkout: moving from navbar-update to main
+9cc8bd5 | HEAD@{Thu Sep 3 21:27:35 2026} | Thu Sep 3 21:26:26 2026 | checkout: moving from main to navbar-update
+25c6658 | HEAD@{Thu Sep 3 21:27:04 2026} | Mon Aug 31 20:27:50 2026 | checkout: moving from navbar-update to main
+9cc8bd5 | HEAD@{Thu Sep 3 21:26:26 2026} | Thu Sep 3 21:26:26 2026 | commit: fixing the code by removing one extra body form the existing code
+a5c2582 | HEAD@{Thu Sep 3 20:55:44 2026} | Thu Sep 3 20:55:44 2026 | commit: fixing the merge
+3313683 | HEAD@{Tue Sep 1 17:10:10 2026} | Sun Aug 30 17:21:48 2026 | checkout: moving from main to navbar-update
+25c6658 | HEAD@{Tue Sep 1 17:10:01 2026} | Mon Aug 31 20:27:50 2026 | checkout: moving from navbar-update to main
+3313683 | HEAD@{Tue Sep 1 17:07:12 2026} | Sun Aug 30 17:21:48 2026 | checkout: moving from main to navbar-update
+25c6658 | HEAD@{Mon Aug 31 20:27:50 2026} | Mon Aug 31 20:27:50 2026 | commit: Adding heading to main branch
+1fbcb17 | HEAD@{Mon Aug 31 20:26:22 2026} | Sun Aug 30 16:12:27 2026 | checkout: moving from navbar-update to main
+3313683 | HEAD@{Mon Aug 31 13:06:46 2026} | Sun Aug 30 17:21:48 2026 | checkout: moving from main to navbar-update
+1fbcb17 | HEAD@{Mon Aug 31 13:06:34 2026} | Sun Aug 30 16:12:27 2026 | checkout: moving from navbar-update to main
+3313683 | HEAD@{Mon Aug 31 13:05:56 2026} | Sun Aug 30 17:21:48 2026 | checkout: moving from main to navbar-update
+1fbcb17 | HEAD@{Mon Aug 31 13:04:35 2026} | Sun Aug 30 16:12:27 2026 | checkout: moving from navbar-update to main
+3313683 | HEAD@{Sun Aug 30 17:21:48 2026} | Sun Aug 30 17:21:48 2026 | commit: Added navbar to the code
+1fbcb17 | HEAD@{Sun Aug 30 17:17:50 2026} | Sun Aug 30 16:12:27 2026 | checkout: moving from main to navbar-update
+1fbcb17 | HEAD@{Sun Aug 30 16:14:43 2026} | Sun Aug 30 16:12:27 2026 | Branch: renamed refs/heads/master to refs/heads/main
+1fbcb17 | HEAD@{Sun Aug 30 16:12:27 2026} | Sun Aug 30 16:12:27 2026 | commit (initial): frist commit
+PS C:\Users\Affan\Desktop\Affan\git-practice>
